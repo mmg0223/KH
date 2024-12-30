@@ -1,0 +1,36 @@
+package integer;
+
+public class varTest01 {
+	
+	public static void main(String[] args) {
+		//변수선언 : 메모리공간을 확보하고, 해당메모리에 이름을 붙이는 작업
+		//dataType 변수이름;
+		
+		//지역변수
+		byte num; //한글은 가능하지만 사용 X
+		// = 대입연산자 : 오른쪽 값을 왼쪽 메모리 공간에 넣어라
+		// 공간 = 값
+		num = 127;// 0111 1111
+		//num = ++num;          1증가 연산자 : 1000 0000
+		
+		System.out.println(num);
+		
+		//local variable : 지역변수는 사용하려면 초기화해야함
+		short num1 = 32767;//선언과 동시에 초기화
+		System.out.println(num1);
+		//num1 = 32768;
+		// 그냥수 : 상수 - 기본형(int, 4byte)
+		
+		//1. 변수는 선언 후 사용 가능
+		//2. 지역변수는 초기화되지 않으면 사용불가
+		
+		int num2=2147483647;
+		System.out.println(num2);
+		
+		//long형 상수표현은 숫자어미에 l/L을 추가 
+		long num3 = 9223372036854775807L;
+		System.out.println(num3);
+		
+	}
+
+}
