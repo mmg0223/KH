@@ -1,0 +1,15 @@
+package type;
+
+public class StringTest {
+	
+	public static void main(String[] args) {
+		//문자열은 기본형은 아니지만 마치 기본형처럼 사용합니다.
+		
+		String str1 = new String("문자열을 쓰시면 됩니다.");
+		String str2 = "문자열을 쓰시면 됩니다.";
+		
+		System.out.println(str1 == str2);       //메모리를 따로 쓰기 때문에 같냐고 묻는다면 false
+		System.out.println(str1.equals(str2));  //문자열 구성은 같기 떄문에 true
+	}
+
+}
