@@ -1,0 +1,14 @@
+package type;
+
+public class DoubleTest {
+	public static void main(String[] args) {
+		double result = 0.0;
+		
+		for(int i=0; i<1000000; i++) {
+			result = result+0.1;
+		}
+		
+		System.out.printf("%.6f",result);
+	}
+
+}
