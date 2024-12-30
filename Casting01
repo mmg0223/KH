@@ -1,0 +1,25 @@
+package casting;
+
+public class CastingTest01 {
+
+	public static void main(String[] args) {
+		
+		byte num = 10;
+		//byte result = (byte) (num + 10);
+		int result = num + 10;
+		System.out.println(result);
+		
+		byte num2 = (byte) 128;
+		System.out.println(num2);
+		
+		float num3 = 9000000000000000000L; //float은 +/-3.4E*10^38
+		
+		//byte < short < int < long < float < double 데이터 표현 가능 범위
+		
+		int num4 = (int) 3.14; //강제 캐스팅 가능. 단, 데이터의 손실발생 가능성 있음
+		//소숫점 아래 데이터의 손실
+		System.out.println(num4);
+
+	}
+
+}
